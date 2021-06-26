@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./icons.css">
+<link rel="stylesheet" href="./jquery/jquery.nice-number.css">
+  <title> My Order</title>
+</head>
+<body>
+  <section class="wrapper">
+    <div class="line-containers">
+      <div class="blue-boxes"> 
+        <span class="icon icon-arrow-right"></span>
+      </div>
+      <div class="blue-boxes">
+        <div class="pink-container"> 
+          <span class="icon icon-bell"></span>
+        </div>
+        <div class="pink-container">
+          <div class="profile-picture">
+            <img src="./img/profile-picture.jpg" alt="">
+          </div>
+        </div>
+        <div class="pink-container">
+          <span class="icon icon-more-vertical"></span>
+        </div>
+      </div>
+    </div>
+    <div class="line-containers">
+      <div class="blue-boxes-title">
+        <h2 class="title"> My Order </h2>
+      </div>
+    </div>
+    
+    <div class="line-containers">
+      <div class="blue-boxes-product">
+        <img src="./img/soup.jpg" alt="">
+      </div>
+      <div class="blue-boxes-description">
+        <div class="product-name">
+        <h4> Cheese Soup</h4>
+        </div>
+        <div class="product-weight">
+          <p>300g</p> 
+        </div>
+      </div>
+      <div class="units">
+        <input type="number" value="0" min="0" >
+      </div>
+      <div class="price">
+        <h3> $14.20 </h3>
+      </div>
+      <div class="remove">
+        <span class="icon icon-trash-2"></span>
+      </div>
+    </div>
+    <div class="line-containers">
+      <div class="blue-boxes-product">
+        <img src="./img/greensalad.jpg" alt="">
+      </div>
+      <div class="blue-boxes-description">
+        <div class="product-name">
+          <h4> Green Salad</h4>
+          </div>
+          <div class="product-weight">
+            <p> 150g</p>
+        </div>
+      </div>
+      <div class="units">
+        <input type="number" value="0" min="0" >
+      </div>
+      <div class="price">
+        <h3> $13.00</h3>
+      </div>
+      <div class="remove">
+        <span class="icon icon-trash-2"></span>
+      </div>
+    </div>
+
+    <div class="line-containers">
+      <div class="blue-boxes-product">
+        <img src="./img/beefburger.jpg" alt="">
+      </div>
+      <div class="blue-boxes-description">
+        <div class="product-name">
+          <h4> Beef burger</h4>
+          </div>
+          <div class="product-weight">
+            <p> 350g</p>
+        </div>
+      </div>
+      <div class="units">
+        <input type="number" value="0" min="0" >
+      </div>
+      <div class="price">
+        <h3> $18.00</h3>
+      </div>
+      <div class="remove">
+        <span class="icon icon-trash-2"></span>
+      </div>
+    </div>
+
+    <div class="line-containers">
+      <div class="blue-boxes-product">
+        <img src="./img/vanillaicecream.jpg" alt="">
+      </div>
+      <div class="blue-boxes-description">
+        <div class="product-name">
+          <h4> Vanilla icecream</h4>
+          </div>
+          <div class="product-weight">
+            <p> 100g</p>
+        </div>
+      </div>
+      <div class="units">
+        <input type="number" value="0" min="0" >
+      </div>
+      <div class="price">
+        <h3> $8.00</h3>
+      </div>
+      <div class="remove">
+        <span class="icon icon-trash-2"></span>
+      </div>
+    </div>
+
+    <div class="line-containers">
+      <div class="blue-boxes-product">
+        <img src="./img/orangejuice.jpg" alt="">
+      </div>
+      <div class="blue-boxes-description">
+        <div class="product-name">
+          <h4> Orange juice</h4>
+          </div>
+          <div class="product-weight">
+            <p> 250ml</p>
+        </div>
+      </div>
+      <div class="units">
+        <input type="number" value="0" min="0" >
+      </div>
+      <div class="price">
+        <h3> $7.00</h3>
+      </div>
+      <div class="remove">
+        <span class="icon icon-trash-2"></span>
+      </div>
+    </div>
+
+    <div class="line-containers">
+      <div class="blue-boxes-person">
+        <label for="Person"> Persons: </label>
+        <input type="number" value="1" min="1" >
+      </div>
+      <div class="blue-boxes-total">
+        <label for="total"> Total: </label>
+      </div>
+    </div>
+
+    <div class="line-containers-checkout">
+     <div class="submit"> 
+       <button type="submit">Checkout</button>
+     </div>
+    </div>
+  </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./jquery/jquery.nice-number.js"></script>
+<script>
+  $(function(){
+
+$('input[type="number"]').niceNumber();
+
+});
+</script>
+
+  
+</body>
+</html>
