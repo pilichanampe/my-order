@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="./icons.css">
-
+<link rel="stylesheet" href="./jquery/jquery.nice-number.css">
   <title> My Order</title>
 </head>
 <body>
@@ -47,6 +47,7 @@
         </div>
       </div>
       <div class="units">
+        <input type="number" value="0" min="0" >
       </div>
       <div class="price">
         <h3> $14.20 </h3>
@@ -68,6 +69,7 @@
         </div>
       </div>
       <div class="units">
+        <input type="number" value="0" min="0" >
       </div>
       <div class="price">
         <h3> $13.00</h3>
@@ -90,6 +92,7 @@
         </div>
       </div>
       <div class="units">
+        <input type="number" value="0" min="0" >
       </div>
       <div class="price">
         <h3> $18.00</h3>
@@ -112,6 +115,7 @@
         </div>
       </div>
       <div class="units">
+        <input type="number" value="0" min="0" >
       </div>
       <div class="price">
         <h3> $8.00</h3>
@@ -134,6 +138,7 @@
         </div>
       </div>
       <div class="units">
+        <input type="number" value="0" min="0" >
       </div>
       <div class="price">
         <h3> $7.00</h3>
@@ -145,8 +150,11 @@
 
     <div class="line-containers">
       <div class="blue-boxes-person">
+        <label for="Person"> Persons: </label>
+        <input type="number" value="1" min="1" >
       </div>
       <div class="blue-boxes-total">
+        <label for="total"> Total: </label>
       </div>
     </div>
 
@@ -156,6 +164,16 @@
      </div>
     </div>
   </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./jquery/jquery.nice-number.js"></script>
+<script>
+  $(function(){
+
+$('input[type="number"]').niceNumber();
+
+});
+</script>
+
   
 </body>
 </html>

@@ -73,6 +73,13 @@ padding: 10 30;
   height: 80px;
   display: flex;
    border-bottom: rgb(184, 179, 179) 2px solid;
+   justify-content: center;
+   align-items: center;
+}
+
+.units input{
+  width: 30%;
+  height: 30%;
 }
 
 .line-containers .price{
@@ -109,18 +116,26 @@ padding: 10 30;
 .blue-boxes-person{
 /* border: blue 2px solid; */
 width: 50%;
-height: 80px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .blue-boxes-total {
   /* border: blue 2px solid; */
   width: 50%;
-  height: 80px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 20;
 }
-
+.blue-boxes-total label{
+  font-family: var(--font-family);
+  font-size: 18px;
+}
 .line-containers-checkout{
   /* border: green solid 2px;  */
   border-bottom: rgb(184, 179, 179) 2px solid;
-  /* background-color: green; */
   width: 100%;
   height: 100px;
   flex-direction: row;
@@ -145,6 +160,12 @@ height: 80px;
   height: auto;
   border-radius: 60%;
 }
+
+
+/* Aqui estan los estilos de cada producto! */
+
+
+
 .product-name {
   /* border: solid 2px orange; */
   width: 100%;
@@ -172,7 +193,25 @@ img{
   align-items: center;
   justify-content: center;
 }
+.blue-boxes-person label{
+  font-family: var(--font-family);
+  color: var(--grey);
+}
 
+.blue-boxes-person input{
+  width: 20%;
+  border: none;
+  border: green 1px solid;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  border: green 1px solid;
+  width: 20px;
+}
+
+/* Ultima linea, boton checkout! */
 .submit{
   display: flex;
   align-items: center;
