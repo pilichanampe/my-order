@@ -73,7 +73,7 @@ padding: 10 30;
   border-bottom: rgb(184, 179, 179) 2px solid;
 }
 .line-containers .units{
-  /* border: 2px solid blue; */
+  /*border: 2px solid blue;*/
   width: 25%;
   height: 80px;
   display: flex;
@@ -82,9 +82,31 @@ padding: 10 30;
    align-items: center;
 }
 
+.borderUnits{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  width: 67%;
+  border-radius: 10px;
+  border: rgb(8, 100, 8) solid 2px;
+
+}
+
 .units input{
-  width: 30%;
-  height: 30%;
+  display: flex;
+  text-align: center;
+  background-color: rgb(230, 221, 210);
+  border:none;
+  width: 25%;
+  height: auto;
+  font-weight: 600;
+  
+}
+#increase, #decrease{
+  border-radius: 100%;
+  background-color: rgb(230, 221, 210);
+  font-weight: 600;
 }
 
 .line-containers .price{
@@ -137,6 +159,16 @@ justify-content: center;
 .blue-boxes-total label{
   font-family: var(--font-family);
   font-size: 18px;
+}
+#totalOrder{
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  min-width: 70px;
+  min-height: 40px;
+  background-color: rgb(230, 221, 210);
+  
 }
 .line-containers-checkout{
   /* border: green solid 2px;  */
@@ -204,15 +236,28 @@ img{
 }
 
 .blue-boxes-person input{
-  width: 20%;
+  display: flex;
+  background-color: rgb(230, 221, 210);
+  text-align: center;
+  width: 25%;
   border: none;
-  border: green 1px solid;
+  font-weight: 600;
+  /*border: green 1px solid;*/
 }
 
+.borderUnitsPerson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  width: 35%;
+  border-radius: 10px;
+  border: rgb(8, 100, 8) solid 2px;
+}
 button{
   border: none;
   border-radius: 5px;
-  border: green 1px solid;
+ /* border: green 1px solid;*/
   width: 20px;
 }
 
