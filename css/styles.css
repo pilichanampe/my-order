@@ -277,3 +277,13 @@ button{
   height: 40px;
   border-radius: 20px;
 }
+
+/*propiedad del cursor e input sin botones del tipo number*/
+.cursor{
+cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
